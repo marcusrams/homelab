@@ -2,7 +2,7 @@
  
 My homelab — built on a dedicated PC running Proxmox. Documenting everything as I set it up.
  
-I'm using this to learn the things I need for a DevOps role — Linux, Docker, Kubernetes, Terraform. Everything is set up manually using official documentation. If something breaks I fix it myself before asking for help.
+I'm using this to learn Linux, Docker, Kubernetes, Terraform. Everything is set up manually using official documentation.
  
 ---
  
