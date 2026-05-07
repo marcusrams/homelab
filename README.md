@@ -1,32 +1,67 @@
-# Marcus Ramsnes – Azure Portfolio
+# homelab
 
-Welcome to my Azure & DevOps project portfolio.  
-This repository contains practical, hands-on projects showcasing skills in **Microsoft Azure**, **Infrastructure as Code**, **CI/CD**, and **containerization**.
+My homelab — built on a dedicated PC running Proxmox. Documenting everything as I set it up.
 
-## 🌩️ Projects
-
-| Project | Description | Technologies |
-|----------|--------------|---------------|
-| [CS2 Server Deployment](projects/cs2-server) | Automated Counter-Strike 2 server hosted on Azure VM or AKS | Azure VM, Docker, Networking |
-| [AKS Leaderboard App](projects/aks-leaderboard) | Scalable web leaderboard app deployed with Azure Kubernetes Service | AKS, Container Registry, CI/CD |
-| [Bicep Foundations](projects/bicep-foundations) | Infrastructure as Code templates and reusable Azure modules | Azure Bicep, ARM Templates |
+I'm using this to learn the things I need for a DevOps role — Linux, Docker, Kubernetes, Terraform. Everything is set up manually using official documentation. If something breaks I fix it myself before asking for help.
 
 ---
 
-## ☁️ Technologies
-- Microsoft Azure  
-- Docker & Containers  
-- GitHub Actions (CI/CD)  
-- Infrastructure as Code (Bicep)  
-- Linux & Bash scripting  
+## Hardware
+
+| Machine | Dell Optiplex 3080 SFF |
+| CPU | Intel Core i5-10500 |
+| RAM | 16GB |
+| Storage A — Boot/Hot | 256GB M.2 NVMe SSD — Proxmox OS + VM root partitions (IOPS) |
+| Storage B — Capacity/Cold | 1TB SATA HDD — ISOs, VZDump backups, long-term storage |
+| Hypervisor | Proxmox VE |
 
 ---
 
-## 📄 Purpose
-This portfolio demonstrates both technical skill and real-world project organization.  
-Each folder includes documentation, IaC templates, and deployment notes for clarity.
+## Current setup
+
+```
+Proxmox host
+├── VM: ubuntu-server-01
+├── VM: ubuntu-server-02   (planned)
+└── VM: ubuntu-server-03   (planned)
+```
 
 ---
 
-_© 2025 Marcus Ramsnes_
+## Status
 
+| Component | Status |
+|-----------|--------|
+| Proxmox VE | ✅ Running |
+| Ubuntu Server VM | 🔄 Setting up |
+| Docker | 📅 Next |
+| Terraform — Proxmox provider | 📅 Planned |
+| K3s Kubernetes cluster | 📅 Planned |
+| Prometheus + Grafana | 📅 Planned |
+| Loki logging | 📅 Planned |
+| Ansible | 📅 Planned |
+
+---
+
+## Docs
+
+| [Proxmox](./proxmox/README.md) | Install, config, decisions |
+| [Linux](./linux/README.md) | VM setup, what I learned |
+| [Docker](./docker/README.md) | Services, compose files |
+| [Terraform](./terraform/README.md) | Proxmox + Azure |
+| [Kubernetes](./kubernetes/README.md) | K3s cluster |
+| [Monitoring](./monitoring/README.md) | Prometheus, Grafana, Loki |
+
+---
+
+## Mistakes log
+
+| Date | What broke | How I fixed it |
+|------|-----------|----------------|
+| — | Just starting | — |
+
+---
+
+## Certs I'm working toward
+
+AZ-900 ✅ → AZ-104 🔄 → Terraform Associate → AZ-400 → CKA
