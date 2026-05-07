@@ -1,4 +1,4 @@
-# homelab
+# Homelab
 
 My homelab — built on a dedicated PC running Proxmox. Documenting everything as I set it up.
 
